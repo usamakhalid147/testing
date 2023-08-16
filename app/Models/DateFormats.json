@@ -1,0 +1,58 @@
+[
+	{
+		"id" : 1,
+		"sample_format" : "01/01/2000",
+		"display_format" : "DD/MM/YYYY",
+		"php_format" : "d/m/Y",
+		"android_format" : "dd/MM/yyyy",
+		"flatpickr_format" : "d/m/Y"
+	},
+	{
+		"id" : 2,
+		"sample_format" : "01/01/2000",
+		"display_format" : "MM/DD/YYYY",
+		"php_format" : "m/d/Y",
+		"android_format" : "MM/dd/yyyy",
+		"flatpickr_format" : "m/d/Y"
+	},
+	{
+		"id" : 3,
+		"sample_format" : "2000/01/01",
+		"display_format" : "YYYY/MM/DD",
+		"php_format" : "Y/m/d",
+		"android_format" : "yyyy/MM/dd",
+		"flatpickr_format" : "Y/m/d"
+	},
+	{
+		"id" : 4,
+		"sample_format" : "01-01-2000",
+		"display_format" : "DD-MM-YYYY",
+		"php_format" : "d-m-Y",
+		"android_format" : "dd-MM-yyyy",
+		"flatpickr_format" : "d-m-Y"
+	},
+	{
+		"id" : 5,
+		"sample_format" : "01-01-2000",
+		"display_format" : "MM-DD-YYYY",
+		"php_format" : "m-d-Y",
+		"android_format" : "MM-dd-yyyy",
+		"flatpickr_format" : "m-d-Y"
+	},
+	{
+		"id" : 6,
+		"sample_format" : "2000-01-01",
+		"display_format" : "YYYY-MM-DD",
+		"php_format" : "Y-m-d",
+		"android_format" : "yyyy-MM-dd",
+		"flatpickr_format" : "Y-m-d"
+	},
+	{
+		"id" : 7,
+		"sample_format" : "Jan 1 2000",
+		"display_format" : "M d Y",
+		"php_format" : "M d Y",
+		"android_format" : "MM dd yyyy",
+		"flatpickr_format" : "M d Y"
+	}
+]

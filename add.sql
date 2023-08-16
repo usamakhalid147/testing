@@ -1,0 +1,1 @@
+INSERT INTO `metas`( `route_name`, `display_name`, `title`, `description`, `keywords`, `ld_json`, `created_at`, `updated_at`) VALUES ('host.signup','host_signup','{"en":"Host Signup"}',NULL,'','','2022-10-14 00:00:00','2022-10-14 00:00:00')

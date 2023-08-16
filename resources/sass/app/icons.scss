@@ -1,0 +1,125 @@
+@font-face {
+	font-family: "bootstrap-icons";
+	src: url("~bootstrap-icons/font/fonts/bootstrap-icons.woff2") format("woff2"),
+	url("~bootstrap-icons/font/fonts/bootstrap-icons.woff") format("woff");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+	display: inline-block;
+	font-family: bootstrap-icons !important;
+	font-style: normal;
+	font-weight: 500;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	vertical-align: -.125em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-large {
+	font-size: 30px;
+}
+
+$icons: (
+	"globe": "\f3ee",
+	"close": "\f623",
+	"map": "\f3e8",
+	"search": "\f52a",
+	"bars": "\f227",
+	"wishlist": "\f417",
+	"wishlist-fill": "\f415",
+	"home": "\f423",
+	"email": "\f32f",
+	"share": "\f52e",
+	"tick": "\f26a",
+	"google": "\f3f0",
+	"facebook": "\f344",
+	"instagram": "\f437",
+	"twitter": "\f5ef",
+	"whatsapp": "\f618",
+	"youtube": "\f62b",
+	"link": "\F471",
+	"linkedin": "\f472",
+	"pinterest": "\f5ee",
+	"property": "\f1dd",
+	"bell": "\f18a",
+	"login" : "\f1be",
+	"trips" : "\f1cc",
+	"inbox" : "\f25f",
+	"profile" : "\f4d7",
+	"chat" : "\f24a",
+	"lock" : "\f538",
+	"edit" : "\f4ca",
+	"work" : "\f1cb",
+	"work-alt" : "\f456",
+	"arrow-left" : "\f12f",
+	"arrow-right" : "\f138",
+	"description" : "\f392",
+	"add-photo" : "\f39b",
+	"security" : "\f53b",
+	"payout" : "\f246",
+	"preference" : "\f56b",
+	"receipt" : "\f50f",
+	"info" : "\f431",
+	"exit" : "\f1c3",
+	"delete" : "\f5de",
+	"vertical-dots" : "\f5d3",
+	"guests" : "\f4cf",
+	"room_type" : "\f308",
+	"check-circle" : "\f26b",
+	"check-circle-fill" : "\f26a",
+	"plus" : "\f4fe",
+	"minus" : "\f2ea",
+	"upload" : "\f603",
+	"instant-book" : "\f46e",
+	"star" : "\f586",
+	"star-empty" : "\f588",
+	"eye" : "\f341",
+	"eye-fill" : "\f33e",
+	"eye-slash" : "\f340",
+	"calendar" : "\f1f6",
+	"time" : "\f293",
+	"inbox-star" : "\f588",
+	"inbox-star-filled" : "\f586",
+	"archive" : "\f10d",
+	"unarchive" : "\f10c",
+	"thumbs-up" : "\f407",
+	"thumbs-down" : "\f405",
+	"verify-batch" : "\f153",
+	"left-chevron" : "\f284",
+	"right-chevron" : "\f285",
+	"help" : "\f431",
+	"menu" : "\f479",
+	"log-sign" : "\f1be",
+	"pencil" : "\f4cb",
+	"caret-right" : "\f234",
+	"caret-left" : "\f230",
+	"mobile" : "\f4e7",
+	"telephone": "\f5b4",
+	"clock": "\f616",
+	"caret-down": "\f22c",
+	"location": "\f3e8",
+	"location-fill": "\f3e7",
+	"down": "\f282",
+	"up": "\f286",
+	"circle-empty": "\f28a",
+	"circle-fill": "\f287",
+	"bookings": "\f444",
+	"reviews": "\f589",
+	"warn": "\f629",
+	"trash" : "\f5e0",
+	"person" : "\f4da",
+	"message-box": "\f256",
+);
+
+@each $name, $content in $icons {
+	.icon-#{$name}:before {
+		content: $content;
+	}
+}
+
+.icon-instant-book, .icon-star, .icon-star-empty {
+	color: $yellow;
+}

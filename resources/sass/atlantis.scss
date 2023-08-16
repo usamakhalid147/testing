@@ -1,0 +1,494 @@
+/*!
+
+=========================================================
+* Atlantis Bootstrap Dashboard (Bootstrap 4)
+=========================================================
+
+* Product Page: http://www.themekita.com/
+* Copyright 2018 Theme Kita (http://www.themekita.com/)
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+[Table of contents]
+
+* Background
+* Typography
+* Layouts
++ Body & Wrapper
++ Main Header
++ Sidebar
+* Layouts Color
+* Components
++ Breadcrumbs
++ Cards
+- Card Stats
+- Card Task
+- Card States
+- Card Posts
+- Card Pricing
+- Card Annoucement
+- Card Profile
+- Accordion
++ Inputs
++ Tables
++ Navbars
++ Navsearch
++ Badges
++ Dropdowns
++ Charts
++ Alerts
++ Buttons
++ Navtabs
++ Popovers
++ Progress
++ Paginations
++ Sliders
++ Modals
++ Timeline
++ Maps
++ Invoice
++ Messages
++ Tasks
++ Settings
+* Plugins
++ jQueryUI
++ jQuery Scrollbar
++ Css Animate
++ Full Calendar
++ SweetAlert
++ Datatables
+
+* Responsive
+
+# [Color codes]
+
+body-text-color: #575962
+white-color: #ffffff
+black-color: #191919
+transparent-bg : transparent
+default-color : #282a3c
+primary-color : #177dff
+secondary-color : #716aca
+info-color : #36a3f7
+success-color : #35cd3a
+warning-color : #ffa534
+danger-color : #f3545d
+
+-------------------------------------------------------------------*/
+
+@import "atlantis/variables";
+@import "atlantis/outlinefocus";
+@import "atlantis/typography";
+@import "atlantis/opacity";
+
+//layouts
+@import "atlantis/layouts";
+@import "atlantis/layouts-colors";
+
+//components
+@import "atlantis/components";
+
+//plugins
+@import "atlantis/plugins";
+
+//responsive
+@import "atlantis/responsive";
+
+//Background
+@import "atlantis/background";
+
+//Login
+@import "atlantis/login";
+
+img {
+    transform: translateZ(0);
+}
+
+.table-img{
+    object-fit: cover;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 2px solid $gray-400;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: $gray-400;
+}
+select::-webkit-scrollbar {
+    width: 8px;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.no-transition {
+    transition: all 0s ease;
+
+    * {
+        transition: all 0s ease;
+    }
+}
+
+.loading {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: "";
+        background: rgba(255,255,255,0.9) url(../images/loader.svg) no-repeat center /50px;
+        display: inline-block;
+        left: 0px;
+        right: 0;
+        top: 0px;
+        bottom: 0;
+        z-index: 9;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.form-horizontal {
+    .col-form-label {
+        &.form-label {
+            text-align: right;
+            font-weight: bold;
+        }
+    }
+}
+
+.required-input {
+    input {
+        border : 1px solid $danger;
+        &:focus {
+            border-color: $danger;
+        }
+    }
+    textarea {
+        border : 1px solid $danger;
+        &:focus {
+            border-color: $danger;
+            box-shadow: 0 0 0 0.25rem $red-100;
+        }
+    }
+    select {
+        border : 1px solid $danger;
+        &:focus {
+            border-color: $danger;
+        }
+    }
+}
+
+.form-panel {
+    .form-floating,
+    .form-group {
+        margin-bottom: 1rem !important;
+    }
+}
+
+.translation {
+    padding : 10px 20px 10px 0px;
+    .translation-header {
+        padding: 1rem 1.25rem;
+        .translation-title {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+    }  
+    .translation-body {
+        padding: 1.25rem;
+    }
+}
+
+.new-count {
+    color: #72FB2C;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hotel_image-container {
+    .hotel_image-row {
+        transition: all 0s ease;
+        * {
+            transition: all 0s ease;
+        }
+
+        li {
+            position: relative;
+            margin: 20px 10px 15px;
+            min-height: 200px;
+            width: 31%;
+
+            .hotel-delete_icon {
+                position: absolute;
+                display: none;
+                top: 10px;
+                right: 10px;
+                font-size: 20px;
+                border: none;
+                background: transparent;
+                color: $white;
+            }
+
+            &:hover {
+                .hotel-delete_icon {
+                    display: block;
+                }
+            }
+
+            .hotel_image {
+                height: 250px;
+                object-fit: cover;
+            }
+
+            &.sortable-placeholder {
+                border: 1px dashed #000000;
+                height: 250px;
+                margin: 20px 10px 15px;
+                width: 30%;
+            }
+        }
+    }
+}
+
+.datatable-select {
+    width: 110px;
+}
+
+.btn-input {
+    border-radius : 0px;
+}
+
+.form-text {
+    margin-bottom: 0px;
+}
+
+// DatePicker Style Start
+.flatpickr-months .flatpickr-month {
+    background: $primary-color !important;
+}
+.flatpickr-weekdays {
+    background: $primary-color !important;
+}
+span.flatpickr-weekday {
+    background: $primary-color !important;
+    color: $white-color !important;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+    background: $primary-color !important;   
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months .flatpickr-monthDropdown-month{
+    background: $primary-color !important;
+}
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay {
+    background: $primary-color !important;
+    border-color: $primary-color !important;
+}
+span.flatpickr-day.today:not(.selected),
+span.flatpickr-day.prevMonthDay.today:not(.selected),
+span.flatpickr-day.nextMonthDay.today:not(.selected) {
+    border-color: $primary-color !important;
+    background-color: $primary-color !important;
+    color: $white-color !important;
+}
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover {
+    color: rgba(64, 72, 72, 0.3) !important;
+}
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover,
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay,
+.flatpickr-day.notAllowed,
+.flatpickr-day.notAllowed.prevMonthDay,
+.flatpickr-day.notAllowed.nextMonthDay {
+    color: rgba(64, 72, 72, 0.8) !important;
+}
+.flatpickr-day.today {
+
+}
+// DatePicker Style End
+
+.form-check-input {
+    &:checked {
+        background-color: $primary-color;
+        border-color: $primary-color;            
+    }
+}
+
+.dropdown-item:active {
+    color: $black-color;
+    background-color: $white-color;
+}
+
+.calendar-availability {
+    .availability-option {
+        span {
+            transition: unset;
+        }
+        margin: 0;
+        width: 50%;
+        padding: 8px 15px 10px;
+        border: 1px solid $primary;
+        text-align: center;
+        position: relative;
+
+        &.availability-selected {
+            background: $primary;
+            color: #fff !important;
+        }
+
+        input[type="radio"] {
+            position: absolute;
+            visibility: hidden;
+        }
+    }
+}
+#full_calendar {
+    table {
+        td {
+            border: 1px solid $gray-600;
+        }
+    }
+}
+.cal-today {
+    border: 1px solid #afafaf;
+    background-color: #FFF7DA;
+    height: 10px; 
+    width: 10px;
+}
+.cal-blocked {
+    border: 1px solid #afafaf;
+    background-color: #de472f;
+    height: 10px; 
+    width: 10px;
+}
+.cal-reservations {
+    border: 1px solid #afafaf;
+    background-color: #E69148;
+    height: 10px; 
+    width: 10px;
+}
+
+.card-stats .col-stats {
+    padding-left: 5px;
+}
+
+.page-item.active .page-link {
+    background-color: $primary-color;
+    border-color: $primary-color
+}
+
+.input-group {
+    .btn {
+        border-radius: 0px !important;
+    }
+}
+
+.custom-dropdown {
+    height: calc(1.5em + 1rem + 2px);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    font-size: 14px;
+    text-align: left;
+
+}
+
+.custom-wrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
+}
+
+.dropdown {
+    .dropdown-item {
+        &:hover,&:focus {
+            color: #fff;
+            background-color: $primary-color;
+        }
+    }
+}
+
+.btn-no-hover-default {
+    color: $dark-color !important;
+    border-color: $dark-color !important;
+}
+
+.detail-persons {
+    font-size: 13px;
+    color: #2a2a2a;
+    font-weight: 500;
+}
+
+.conversation-profile-image {
+    height: 150px;
+    width: 150px;
+}
+
+#full_calendar {
+    &.fc {
+        .fc-bg-event {
+            opacity: 0.9 !important;
+            .fc-event-title {
+                padding: 20px 2px;
+                text-transform: capitalize;
+                display: inline-block;
+                color: #fff;
+                width: 90%;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+.input-group-text {
+    line-height: 2 !important;
+    border-radius: unset;
+}
+
+.form-role {
+    label {
+        white-space: break-spaces;
+    }
+}
